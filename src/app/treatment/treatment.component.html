@@ -1,0 +1,15 @@
+<div class="page-container">
+    <h2 class="section-heading">GYNECOLOGY</h2>
+    <div class="section-content">
+        <nav class="side-nav card container">
+            <ul>
+                @for (item of items; track $index) {
+                <li><a href="" [routerLink]="['../',item.route]">{{item.label}}</a></li>
+                }
+            </ul>
+        </nav>
+        <div class="treatment-container">
+            <app-info [treatment]="selectedSubTreatment"></app-info>
+        </div>
+    </div>
+</div>

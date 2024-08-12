@@ -33,15 +33,15 @@ export class HeaderComponent {
       items: [
         {
           label: 'Adolescent Medicine',
-          router: '/gynecology/adolscent'
+          router: 'treatment/gynecology/adolscent'
         },
         {
           label: 'Menstrual Problems',
-          router: '/gynecology/menstural'
+          router: 'treatment/gynecology/menstural'
         },
         {
           label: 'Polycystic Ovarian Syndrome (PCOS)',
-          router: '/gynecology/pcos'
+          router: 'treatment/gynecology/pcos'
         },
         {
           label: 'Urinary Problems in Females',
@@ -84,7 +84,7 @@ export class HeaderComponent {
       items: [
         {
           label: 'Pre pregnancy Care',
-          router: ''
+          router: 'treatment/obstetrics/pre'
         },
         {
           label: 'Pregnancy Care',

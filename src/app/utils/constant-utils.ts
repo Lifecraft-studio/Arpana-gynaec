@@ -4,7 +4,7 @@ export const treatments = [
         id: 'gynecology',
         treatments: [
             {
-                label: 'Adolescent Medicine', route: '/gynecology/adolscent', id: 'adolscent',
+                label: 'Adolescent Medicine', route: 'adolscent', id: 'adolscent',
                 description: [
                     `Adolescent medicine focuses on the physical, emotional, and social health of young people during their transition from childhood to adulthood. 
                     It addresses the unique medical and developmental needs of adolescents, including growth and puberty, mental health, 
@@ -19,7 +19,7 @@ export const treatments = [
                 imgSrc: `treatments/gynecology/adolscent.jpg`
             },
             {
-                label: 'Menstrual Problems', route: '/gynecology/menstural', id: 'menstural',
+                label: 'Menstrual Problems', route: 'menstural', id: 'menstural',
                 description: [
                     `Menstrual problems encompass a range of issues related to the menstrual cycle, including irregular periods, heavy bleeding, 
                     painful cramps, and conditions like amenorrhea (absence of periods) or dysmenorrhea (painful periods). These problems can significantly 
@@ -60,8 +60,22 @@ export const treatments = [
     },
     {
         label: 'Obstetrics',
+        id: 'obstetrics',
         treatments: [
-            { label: 'Pre pregnancy Care', route: '', description: 'Pre pregnancy Care' },
+            {
+                label: 'Pre pregnancy Care', route: '/obstetrics/pre', id: 'pre', description: [
+                    `Pre-pregnancy care, also known as preconception care, involves a series of health evaluations and interventions that prepare a woman for a healthy pregnancy. 
+                    This care focuses on optimizing a woman’s health before conception by addressing any existing medical conditions, providing nutritional guidance, ensuring vaccinations are up to date, 
+                    and discussing lifestyle modifications. 
+                    Pre-pregnancy care aims to identify and mitigate any potential risks to both the mother and the future baby, leading to a healthier pregnancy and reducing complications.`,
+                    `Dr. Arpana Jain offers specialized pre-pregnancy care, guiding women through the essential steps to ensure they are in the best possible health before conception. 
+                    She provides comprehensive assessments, including medical history reviews, physical examinations, and necessary screenings, to identify any factors that could impact pregnancy. 
+                    Dr. Jain works closely with her patients to develop personalized plans that include nutritional advice, lifestyle adjustments, and management of any pre-existing conditions.
+                    Her goal is to help women achieve optimal health, setting the foundation for a safe and successful pregnancy journey.`
+                ],
+                headingText: `Pre-Pregnancy Care with Dr. Arpana Jain`,
+                imgSrc: `treatments/obstetrics/pre-preg.jpg`
+            },
             { label: 'Pregnancy Care', route: '', description: 'Pregnancy Care' },
             { label: 'Laparoscopy For Ectopic Pregnancy', route: '', description: 'Laparoscopy For Ectopic Pregnancy' },
             { label: 'Recurrent Pregnancy Loss', route: '', description: 'Recurrent Pregnancy Loss' },

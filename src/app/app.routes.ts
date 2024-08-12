@@ -6,6 +6,7 @@ import { ObstetricsComponent } from './obstetrics/obstetrics.component';
 import { SurgeryComponent } from './surgery/surgery.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { InfoComponent } from './info/info.component';
+import { TreatmentComponent } from './treatment/treatment.component';
 
 export const routes: Routes = [
     {
@@ -15,20 +16,9 @@ export const routes: Routes = [
         path: 'about', component: AboutComponent
     },
     {
-        path: 'gynecology', component: GynecologyComponent,
-        children: [
-            {
-                path: ':treatment', component: InfoComponent
-            },
-        ]
+        path: 'treatment/:type/:subtype', component: TreatmentComponent
     },
     {
-        path: 'obstetrics', component: ObstetricsComponent
-    },
-    {
-        path: 'surgery', component: SurgeryComponent
-    },
-    {
-        path: 'galley', component: GalleryComponent
+        path: 'gallery', component: GalleryComponent
     },
 ];
