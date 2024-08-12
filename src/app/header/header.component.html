@@ -1,0 +1,33 @@
+<header>
+    <div class="container">
+        <button class="btn-toggle" (click)="showMenu = !showMenu">
+            <span class="hamburger"></span>
+        </button>
+
+        <a routerLink="/"><img src="/assets/logo.png"></a>
+        <nav class="nav" [ngClass]="{'show' : showMenu}">
+            <ul class="menu menu-item-depth-0">
+                @for (item of menuList; track $index) {
+                <li class="menu-item">
+                    <span class="item-expandible" (click)="toggleSubMenu(item.label)">
+                        {{item.label}}
+                        @if (item.items && item.items.length) {
+                        <span class="expandible-icon">
+                            {{item.collpased ? '+' : '-'}}
+                        </span>
+                        }
+                    </span>
+                    @if (item.items && item.items.length) {
+                    <ul class="menu menu-item-depth-1" [ngClass]="item.collpased ? 'collapsed' : 'expanded'"
+                        [ngStyle]="item.styles">
+                        @for ( submenu of item.items; track $index) {
+                        <li class="menu-item"><a [routerLink]="submenu.router">{{submenu.label}}</a></li>
+                        }
+                    </ul>
+                    }
+                </li>
+                }
+            </ul>
+        </nav>
+    </div>
+</header>

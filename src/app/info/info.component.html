@@ -1,0 +1,7 @@
+<div class="container">
+    <h2>{{treatment.label}}</h2>
+    <img [src]="'assets/'+treatment.imgSrc">
+    @for (item of treatment.description; track $index) {
+    <p>{{item}}</p>
+    }
+</div>

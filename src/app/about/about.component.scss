@@ -1,0 +1,128 @@
+@import '../../../public/assets/variables';
+
+.about-main {
+    color: #fff;
+    background-color: $primary;
+    padding: 2rem 0;
+
+    .about-info {
+
+        padding: 2rem 1rem;
+        line-height: 1.5;
+
+        h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .about-img {
+        img {
+            box-shadow: -3px 2px 29px -4px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: -3px 2px 29px -4px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -3px 2px 29px -4px rgba(0, 0, 0, 0.75);
+
+            border-radius: 10px;
+        }
+    }
+
+    @media (min-width: $bp-md) {
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .about-img {
+            width: 40%;
+        }
+
+        .about-info {
+            width: 60%;
+            font-size: 1.25rem;
+
+            h2 {
+                font-size: 3.25rem;
+            }
+
+        }
+    }
+}
+
+.circle {
+    padding: 0.25rem;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: -34px;
+    background: #fff;
+}
+
+.spec-section {
+    @media (min-width: $bp-md) {
+        display: flex;
+    }
+}
+
+.spec-content {
+    padding: 3rem 1rem;
+    color: #fff;
+    position: relative;
+
+    h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    &:nth-child(2n) {
+        background-color: darken($color: $secondary, $amount: 5%);
+    }
+
+    &:nth-child(2n+1) {
+        background-color: darken($color: $secondary, $amount: 7%);
+    }
+}
+
+.section-heading {
+    color: $primary;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.fellowship-section {
+
+    ul {
+        line-height: 1.8;
+        font-size: 1.275rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    @media (min-width:$bp-md) {
+        display: flex;
+        gap: 3rem;
+
+        .card {
+            width: 35%;
+
+            &:nth-child(2n) {
+                width: 50%;
+            }
+
+            &:nth-child(2n+1) {
+                position: relative;
+                top: 11rem;
+                margin-top: 7rem;
+            }
+        }
+
+    }
+}

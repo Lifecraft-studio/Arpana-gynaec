@@ -1,0 +1,237 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+@import '../public/assets/variables';
+@import 'primeng/resources/primeng.min.css';
+@import 'primeng/resources/themes/aura-light-pink/theme.css';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(/assets/fonts/Poppins-Regular.ttf);
+}
+
+body {
+    overflow-x: hidden;
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+    color: $text-color;
+    // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-family: poppins;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+    margin: 0;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+a {
+    text-decoration: none;
+    color: $primary;
+}
+
+.container {
+    width: 80%;
+    max-width: 1420px;
+    margin: 0 auto;
+    position: relative;
+
+    @media (max-width: $bp-md) {
+        width: 90%;
+    }
+}
+
+.img-container {
+    text-align: center;
+}
+
+.page-container {
+    margin-top: 15rem;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.btn {
+    padding: 0.5rem 0.875rem;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: $primary;
+    color: #fff;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.customized-timeline {
+
+    .p-timeline-event-connector {
+        width: 60%;
+    }
+
+    .p-timeline-event:last-child {
+        width: 11%;
+    }
+
+    .image-icon {
+        background: url(/assets/icons/heart.png);
+        width: 39px;
+        height: 33px;
+        background-size: 39px 33px;
+        color: #FFF;
+        font-size: 14px;
+        font-weight: normal;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        cursor: pointer;
+    }
+}
+
+.trimester-desc {
+    max-width: 300px;
+    padding: 1rem;
+    -webkit-box-shadow: 13px 14px 14px -7px $primary;
+    -moz-box-shadow: 13px 14px 14px -7px $primary;
+    box-shadow: 13px 14px 14px -7px $primary;
+    border: 1px solid $primary;
+    border-radius: 20px;
+    line-height: 1.5;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    [class*=owl-] {
+        background: none !important;
+    }
+
+    &:hover {
+        background: none !important;
+    }
+}
+
+.hero-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .content {
+        color: #fff;
+        line-height: 1.25;
+
+        h2 {
+            color: $primary;
+            margin-bottom: 2rem;
+            font-size: 2.25rem;
+        }
+
+        p {
+            font-size: 1.75rem;
+        }
+
+        @media (min-width: $bp-md) {
+            width: 50%;
+        }
+
+        @media (min-width:$bp-lg) {
+            h2 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.section {
+    margin: 6rem auto;
+
+    @media (min-width: $bp-md) {
+        margin: 9rem auto;
+    }
+}
+
+
+.section-heading {
+    text-align: center;
+    font-size: 3rem;
+    color: $heading-color;
+    margin: 0;
+    margin-bottom: 0.5rem;
+
+    @media (min-width : $bp-sm) and (max-width: $bp-md) {
+        font-size: 2rem;
+    }
+
+    @media (min-width : $bp-md) {
+        margin-bottom: 1.75rem;
+    }
+}
+
+.card {
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    padding: 1rem;
+    margin-bottom: 4rem;
+    -webkit-box-shadow: 10px 10px 22px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 22px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 22px -8px rgba(0, 0, 0, 0.75);
+
+    @media (min-width: $bp-lg) {
+        padding: 1.5rem 2rem;
+    }
+}
