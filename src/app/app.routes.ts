@@ -9,16 +9,21 @@ import { InfoComponent } from './info/info.component';
 import { TreatmentComponent } from './treatment/treatment.component';
 
 export const routes: Routes = [
-    {
-        path: '', component: LandingComponent, pathMatch: 'full'
-    },
-    {
-        path: 'about', component: AboutComponent
-    },
-    {
-        path: 'treatment/:type/:subtype', component: TreatmentComponent
-    },
-    {
-        path: 'gallery', component: GalleryComponent
-    },
+  {
+    path: '',
+    component: LandingComponent,
+    pathMatch: 'full',
+  },
+  {
+    path: 'about',
+    component: AboutComponent,
+  },
+  {
+    path: 'treatment/:type/:subtype',
+    component: TreatmentComponent,
+  },
+  {
+    path: 'gallery',
+    component: GalleryComponent,
+  },
 ];

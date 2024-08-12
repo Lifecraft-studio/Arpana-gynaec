@@ -45,27 +45,27 @@ export class HeaderComponent {
         },
         {
           label: 'Urinary Problems in Females',
-          router: ''
+          router: 'treatment/gynecology/urinaryprob'
         },
         {
           label: 'Vaginal Discharge',
-          router: ''
+          router: 'treatment/gynecology/vaginaldischarge'
         },
         {
           label: 'Menopause',
-          router: ''
+          router: 'treatment/gynecology/menopause'
         },
         {
           label: 'Cancer Screening',
-          router: ''
+          router: 'treatment/gynecology/cancerscreening'
         },
         {
           label: 'Cervical Cancer',
-          router: ''
+          router: 'treatment/gynecology/cervicalcancer'
         },
         {
           label: 'Ovarian Cysts',
-          router: ''
+          router: 'treatment/gynecology/ovariancysts'
         },
         {
           label: 'Colposcopy',
