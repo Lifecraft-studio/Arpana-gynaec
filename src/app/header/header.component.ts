@@ -69,11 +69,11 @@ export class HeaderComponent {
         },
         {
           label: 'Colposcopy',
-          router: ''
+          router: 'treatment/gynecology/Colposcopy'
         },
         {
           label: 'Pelvic Floor Repair',
-          router: ''
+          router: 'treatment/gynecology/pelvicfloorrepair'
         },
       ],
       collpased: true,
@@ -88,39 +88,39 @@ export class HeaderComponent {
         },
         {
           label: 'Pregnancy Care',
-          router: ''
+          router: 'treatment/obstetrics/PregnancyCare'
         },
         {
           label: 'Laparoscopy For Ectopic Pregnancy',
-          router: ''
+          router: 'treatment/obstetrics/LaparoscopyEctopic'
         },
         {
           label: 'Recurrent Pregnancy Loss',
-          router: ''
+          router: 'treatment/obstetrics/RecurrentPregnancyLoss'
         },
         {
           label: 'Pregnancy Ultrasound Scan',
-          router: ''
+          router: 'treatment/obstetrics/PregUltrasound'
         },
         {
           label: 'Painless Delivery',
-          router: ''
+          router: 'treatment/obstetrics/PainlessDelivery'
         },
         {
           label: 'Abortion',
-          router: ''
+          router: 'treatment/obstetrics/Abortion'
         },
         {
           label: 'Breastfeeding Your Child',
-          router: ''
+          router: 'treatment/obstetrics/Breastfeeding'
         },
         {
           label: 'Cardiotocography',
-          router: ''
+          router: 'treatment/obstetrics/Cardiotocography'
         },
         {
           label: 'Contraception',
-          router: ''
+          router: 'treatment/obstetrics/Contraception'
         }
       ],
       collpased: true,
@@ -131,39 +131,39 @@ export class HeaderComponent {
       items: [
         {
           label: 'Caesarean Delivery',
-          router: ''
+          router: 'treatment/surgeries/caesarean'
         },
         {
           label: 'Laparoscopic Hysterectomy',
-          router: ''
+          router: 'treatment/surgeries/laparoscopichysterectomy'
         },
         {
           label: 'Laparoscopic Myomectomy',
-          router: ''
+          router: 'treatment/surgeries/laparoscopicmyomectomy'
         },
         {
           label: 'Vaginoplasty',
-          router: ''
+          router: 'treatment/surgeries/vaginoplasty'
         },
         {
           label: 'Operative Hysteroscopy',
-          router: ''
+          router: 'treatment/surgeries/operativehysteroscopy'
         },
         {
           label: 'Tubal Ligation',
-          router: ''
+          router: 'treatment/surgeries/tuballigation'
         },
         {
           label: 'Hymenoplasty',
-          router: ''
+          router: 'treatment/surgeries/hymenoplasty'
         },
         {
           label: 'Tuboplasty',
-          router: ''
+          router: 'treatment/surgeries/tuboplasty'
         },
         {
           label: 'Laparoscopy For Ectopic Pregnancy',
-          router: ''
+          router: 'treatment/surgeries/laparoscopyectopic'
         }
       ],
       collpased: true,
@@ -174,11 +174,11 @@ export class HeaderComponent {
       items: [
         {
           label: 'Intrauterine Insemination (IUI)',
-          router: ''
+          router: 'treatment/infertility/intrauterineinsemination'
         },
         {
           label: 'In Vitro Fertilization (IVF)',
-          router: ''
+          router: 'treatment/infertility/ivf'
         },
       ],
       collpased: true,

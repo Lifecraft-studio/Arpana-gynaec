@@ -169,11 +169,26 @@ export const treatments = [
         headingText: `Ovarian cysts treatment with Dr. Arpana Jain`,
         imgSrc: `treatments/gynecology/ovariancysts.jpg`,
       },
-      { label: 'Colposcopy', route: '', description: 'Colposcopy' },
+      { label: 'Colposcopy',
+         route: 'Colposcopy',
+         id: 'Colposcopy',
+        description: [
+          `Colposcopy is a diagnostic procedure used to closely examine the cervix, vagina, and vulva for signs of disease, particularly after abnormal results from a Pap smear. During the procedure, a colposcope—a special magnifying instrument—is used to illuminate and magnify the tissues, allowing the healthcare provider to identify any abnormal areas that may require further testing or biopsy. Colposcopy is an essential tool in the early detection and prevention of cervical cancer and other gynecological conditions. It is a safe and effective procedure that provides valuable information for the diagnosis and management of cervical health issues.`,
+          `Dr. Arpana Jain offers expert colposcopy services, providing women with the highest standard of care when addressing abnormal cervical findings. With her extensive experience, Dr. Jain ensures that each patient receives a thorough and compassionate evaluation. She uses advanced colposcopy techniques to accurately identify any areas of concern and determine the need for further testing or treatment. Dr. Jain takes the time to explain the procedure, results, and next steps to her patients, ensuring they feel informed and supported throughout the process. Her goal is to deliver precise and personalized care, helping women maintain their cervical health and peace of mind.`
+        ],
+        headingText: `Colposcopy test with Dr. Arpana Jain`,
+        imgSrc: `treatments/gynecology/Colposcopy.jpg`,
+       },
       {
         label: 'Pelvic Floor Repair',
-        route: '',
-        description: 'Pelvic Floor Repair',
+        route: 'pelvicfloorrepair',
+        id:'pelvicfloorrepair',
+        description: [
+          `Pelvic floor repair is a surgical procedure aimed at correcting pelvic floor disorders, such as pelvic organ prolapse or incontinence. The pelvic floor is a group of muscles and tissues that support the bladder, uterus, and rectum. When these muscles become weakened or damaged, often due to childbirth, aging, or surgery, it can lead to discomfort, urinary or fecal incontinence, and a feeling of pressure or bulging in the pelvic area. Pelvic floor repair involves reconstructing and reinforcing the pelvic muscles and tissues, restoring normal function and alleviating symptoms. This procedure is crucial for improving quality of life and maintaining pelvic health.`,
+          `Dr. Arpana Jain is a specialist in pelvic floor repair, offering advanced surgical solutions for women experiencing pelvic floor disorders. With a deep understanding of the complexities of pelvic health, Dr. Jain provides comprehensive evaluations to determine the best approach for each patient. She uses state-of-the-art techniques to perform pelvic floor repair, ensuring the restoration of function and relief from symptoms such as prolapse and incontinence. Dr. Jain works closely with her patients to develop personalized treatment plans, guiding them through every step of the surgical process and post-operative care. Her commitment to excellence in pelvic health care helps women regain comfort, confidence, and control over their lives.`
+        ],
+        headingText: `Pelvic Floor Repair treatment with Dr. Arpana Jain`,
+        imgSrc: `treatments/gynecology/pelvicfloorrepair.jpg`,
       },
     ],
   },
@@ -198,83 +213,230 @@ export const treatments = [
         headingText: `Pre-Pregnancy Care with Dr. Arpana Jain`,
         imgSrc: `treatments/obstetrics/pre-preg.jpg`,
       },
-      { label: 'Pregnancy Care', route: '', description: 'Pregnancy Care' },
+      {
+       label: 'Pregnancy Care',
+        route: 'PregnancyCare',
+        id:'PregnancyCare',
+        description: [
+          `Pregnancy care, also known as prenatal care, is essential for ensuring the health and well-being of both the mother and the developing baby throughout pregnancy. It involves regular medical check-ups, monitoring the progress of the pregnancy, managing any complications, and providing education on healthy pregnancy practices. Pregnancy care includes a range of services, such as ultrasounds, blood tests, nutritional counseling, and guidance on exercise and lifestyle choices. This comprehensive care is vital for detecting potential issues early, offering timely interventions, and supporting a safe and healthy pregnancy journey from conception to delivery.`,
+          `Dr. Arpana Jain provides expert pregnancy care, guiding expectant mothers through every stage of their pregnancy with personalized attention and compassionate support. With a focus on comprehensive prenatal care, Dr. Jain offers regular monitoring, detailed ultrasounds, and necessary tests to ensure the health of both mother and baby. She works closely with her patients to develop individualized care plans, addressing their unique needs and preferences. Dr. Jain also offers guidance on nutrition, exercise, and birth planning, empowering women to have a positive and informed pregnancy experience. Her commitment to exceptional prenatal care helps ensure a safe and healthy pregnancy journey, leading to a joyful and successful delivery.`
+        ],
+        headingText: `Pregnancy Care with Dr. Arpana Jain`,
+        imgSrc: `treatments/obstetrics/PregnancyCare.jpg`,
+       },
       {
         label: 'Laparoscopy For Ectopic Pregnancy',
-        route: '',
-        description: 'Laparoscopy For Ectopic Pregnancy',
+        route: 'LaparoscopyEctopic',
+        id:'LaparoscopyEctopic',
+        description: [
+          `Laparoscopy for ectopic pregnancy is a minimally invasive surgical procedure used to treat an ectopic pregnancy, which occurs when a fertilized egg implants outside the uterus, most commonly in the fallopian tube. Ectopic pregnancies cannot proceed normally and can cause life-threatening complications if not treated promptly. During a laparoscopy, a small camera (laparoscope) is inserted through tiny incisions in the abdomen, allowing the surgeon to locate and remove the ectopic pregnancy with minimal disruption to surrounding tissues. This procedure is preferred for its shorter recovery time, reduced pain, and minimal scarring compared to traditional surgery.`,
+          `Dr. Arpana Jain is an expert in performing laparoscopy for ectopic pregnancy, offering safe and effective treatment for this serious condition. With her extensive experience in minimally invasive surgery, Dr. Jain provides precise and compassionate care to women facing the challenges of an ectopic pregnancy. She conducts thorough evaluations to confirm the diagnosis and carefully plans the procedure to ensure the best possible outcome. Dr. Jain’s approach minimizes discomfort and promotes a faster recovery, allowing her patients to return to their normal lives with minimal delay. Her dedication to advanced surgical techniques and patient-centered care ensures that women receive the highest standard of treatment during this critical time.`
+        ],
+        headingText: `Laparoscopy For Ectopic Pregnancy with Dr. Arpana Jain`,
+        imgSrc: `treatments/obstetrics/LaparoscopyEctopic.jpg`,
       },
       {
         label: 'Recurrent Pregnancy Loss',
-        route: '',
-        description: 'Recurrent Pregnancy Loss',
+        route: 'RecurrentPregnancyLoss',
+        id: 'RecurrentPregnancyLoss',
+        description: [
+          `Recurrent pregnancy loss, defined as having two or more consecutive miscarriages, is a distressing experience for couples trying to conceive. This condition can result from various factors, including genetic abnormalities, hormonal imbalances, anatomical issues, or autoimmune disorders. Identifying the underlying cause is crucial for developing an effective treatment plan. Comprehensive evaluations, including blood tests, imaging studies, and genetic counseling, are often necessary to diagnose the reason for recurrent pregnancy loss. With the right care and interventions, many women can go on to have successful pregnancies, despite previous losses.`,
+          `Dr. Arpana Jain offers specialized care for women experiencing recurrent pregnancy loss, providing thorough evaluations and compassionate support. With a deep understanding of the emotional and physical challenges involved, Dr. Jain conducts comprehensive assessments to identify potential causes, including genetic, hormonal, and structural factors. She works closely with her patients to develop personalized treatment plans that may include medical management, lifestyle modifications, or surgical interventions as needed. Dr. Jain is dedicated to helping women overcome the challenges of recurrent pregnancy loss, offering hope and expert guidance on the journey to a successful pregnancy and healthy baby.`
+        ],
+        headingText: `Recurrent Pregnancy Loss treatment with Dr. Arpana Jain`,
+        imgSrc: `treatments/obstetrics/RecurrentPregnancyLoss.jpg`,
       },
       {
         label: 'Pregnancy Ultrasound Scan',
-        route: '',
-        description: 'Pregnancy Ultrasound Scan',
+        route: 'PregUltrasound',
+        id:'PregUltrasound',
+        description: [
+          ``,
+          ``
+        ],
+        headingText: `Pregnancy Ultrasound Scan test with Dr. Arpana Jain`,
+        imgSrc: `treatments/obstetrics/PregUltrasound.jpg`,
       },
       {
         label: 'Painless Delivery',
-        route: '',
-        description: 'Painless Delivery',
+        route: 'PainlessDelivery',
+        id: 'PainlessDelivery',
+        description: [
+          `Painless delivery, often referred to as epidural anesthesia during labor, is a popular option for managing pain during childbirth. This method involves administering an epidural, which provides effective pain relief while allowing the mother to remain awake and actively participate in the birthing process. Painless delivery can significantly reduce the discomfort and anxiety associated with labor, helping women have a more positive childbirth experience. The epidural is carefully administered by an anesthesiologist, and its effects can be adjusted throughout labor to ensure comfort. Painless delivery is a safe and widely used option that allows for a smoother and less stressful birth experience.`,
+          `Dr. Arpana Jain specializes in painless delivery, offering expert care and guidance for women who choose this option for childbirth. With her extensive experience in managing labor and delivery, Dr. Jain ensures that the epidural is administered safely and effectively, providing optimal pain relief while maintaining the health and well-being of both mother and baby. She works closely with a team of skilled anesthesiologists to monitor and adjust the epidural as needed, ensuring a comfortable and controlled delivery experience. Dr. Jain is dedicated to supporting women through every stage of labor, offering compassionate care and expert advice to help them achieve a positive and empowering childbirth experience.`
+        ],
+        headingText: `Painless Delivery with Dr. Arpana Jain`,
+        imgSrc: `treatments/obstetrics/PainlessDelivery.jpg`,
       },
-      { label: 'Abortion', route: '', description: 'Abortion' },
+      { label: 'Abortion',
+         route: 'Abortion',
+         id: 'Abortion',
+        description: [
+          `Abortion is a medical procedure that terminates a pregnancy. It can be performed through medication or surgical methods, depending on the stage of pregnancy and the patient’s health needs. The decision to have an abortion is deeply personal and may be influenced by various factors, including health concerns, personal circumstances, or fetal abnormalities. Safe and legal abortion services are essential for protecting a woman's health and ensuring her right to make informed decisions about her body. Comprehensive care, including pre-procedure counseling, the procedure itself, and post-procedure support, is vital to ensure the physical and emotional well-being of the patient.`,
+          `Dr. Arpana Jain provides compassionate and confidential abortion care, offering expert guidance and support throughout the process. Understanding the sensitive nature of this decision, Dr. Jain ensures that each patient receives comprehensive counseling to explore all options and make an informed choice. She performs both medical and surgical abortions with the highest standard of care, prioritizing patient safety and comfort. Dr. Jain also provides thorough follow-up care to address any physical or emotional needs after the procedure. Her approach is non-judgmental and patient-centered, ensuring that women receive the respectful and supportive care they need during this challenging time.`
+        ], 
+        headingText: `Abortion process with Dr. Arpana Jain`,
+        imgSrc: `treatments/obstetrics/Abortion.jpg`,
+      },
       {
         label: 'Breastfeeding Your Child',
-        route: '',
-        description: 'Breastfeeding Your Child',
+        route: 'Breastfeeding',
+        id: 'Breastfeeding',
+        description: [
+          `Breastfeeding is a natural and highly beneficial way to nourish a newborn, providing essential nutrients and antibodies that promote healthy growth and development. It strengthens the bond between mother and baby, supports the baby’s immune system, and offers numerous health benefits for both mother and child. While breastfeeding is a rewarding experience, it can sometimes present challenges, such as latching difficulties, supply issues, or discomfort. Proper guidance and support are crucial in helping new mothers overcome these challenges and achieve a successful breastfeeding experience.`,
+          `Dr. Arpana Jain offers expert breastfeeding support, helping new mothers navigate the joys and challenges of breastfeeding with confidence. With a deep understanding of the benefits and complexities of breastfeeding, Dr. Jain provides personalized advice and practical solutions to address any concerns or difficulties. She works closely with her patients to ensure proper latching, resolve any supply issues, and promote comfort and well-being during breastfeeding. Dr. Jain’s compassionate approach empowers mothers to provide the best nourishment for their babies while fostering a strong and healthy bond. Her commitment to supporting new mothers ensures a positive breastfeeding journey and a healthy start for newborns.`
+        ],
+        headingText: `Breastfeeding education with Dr. Arpana Jain`,
+        imgSrc: `treatments/obstetrics/Breastfeeding.jpg`,
       },
-      { label: 'Cardiotocography', route: '', description: 'Cardiotocography' },
-      { label: 'Contraception', route: '', description: 'Contraception' },
+      { label: 'Cardiotocography',
+        route: 'Cardiotocography',
+        id: 'Cardiotocography',
+        description: [
+          `Cardiotocography (CTG) is a monitoring technique used during labor to assess the fetal heart rate and uterine contractions. It provides valuable information about the baby's well-being and helps detect any signs of distress or abnormal patterns that may require intervention. CTG involves placing external sensors on the mother’s abdomen to continuously record the fetal heart rate and contractions, offering real-time insights into the baby’s condition and labor progress. This non-invasive method is essential for ensuring a safe and healthy delivery by identifying potential issues early and guiding appropriate medical responses.`,
+          `Dr. Arpana Jain specializes in the use of cardiotocography (CTG) to monitor fetal health during labor, ensuring a safe and informed delivery process. With her expertise, Dr. Jain utilizes CTG to continuously assess the fetal heart rate and uterine contractions, providing critical information on the baby’s condition and labor progress. She carefully interprets the CTG data to identify any signs of distress or abnormal patterns, allowing for timely and appropriate interventions if necessary. Dr. Jain’s commitment to detailed and attentive monitoring helps ensure the best possible outcomes for both mother and baby, delivering expert care and peace of mind throughout the labor and delivery process.`
+        ], 
+        headingText: `Cardiotocography with Dr. Arpana Jain`,
+        imgSrc: `treatments/obstetrics/Cardiotocography.jpg`
+      },
+      { label: 'Contraception',
+        route: 'Contraception',
+        id: 'Contraception',
+         description: [
+          `Women’s contraception encompasses a range of methods specifically designed to prevent pregnancy and manage reproductive health. These options include hormonal methods (such as birth control pills, patches, and hormonal IUDs), barrier methods (like condoms and diaphragms), long-acting reversible contraceptives (such as copper IUDs and implants), and permanent solutions (like tubal ligation). Each method has unique benefits, effectiveness rates, and potential side effects. Choosing the right contraceptive option involves considering individual health needs, lifestyle, and future reproductive plans, and requires careful discussion and evaluation to ensure optimal results.`,
+          `Dr. Arpana Jain offers expert care in women’s contraception, providing personalized advice and support to help women choose the most appropriate contraceptive method for their individual needs. With a comprehensive understanding of various contraceptive options, Dr. Jain conducts thorough evaluations to discuss the benefits, risks, and effectiveness of each method. She collaborates with her patients to create tailored contraception plans that align with their health conditions, lifestyle, and reproductive goals. Dr. Jain is committed to delivering compassionate and non-judgmental care, empowering women to make informed decisions about their reproductive health and ensuring they receive the best possible support for their contraception needs.`
+         ],
+         headingText: `Contraception tips and treatments with Dr. Arpana Jain`,
+         imgSrc: `treatments/obstetrics/Contraception.jpg` },
     ],
   },
   {
     label: 'Surgeries',
+    id:'surgeries',
     treatments: [
       {
         label: 'Caesarean Delivery',
-        route: '',
-        description: 'Caesarean Delivery',
+        route: 'caesarean',
+        id: 'caesarean',
+        description: [
+          `A caesarean section (C-section) is a surgical procedure used to deliver a baby through an incision made in the mother’s abdomen and uterus, rather than through the vaginal canal. This method may be necessary due to various factors such as labor complications, fetal distress, or maternal health conditions that make a vaginal delivery unsafe or impractical. C-sections can be planned ahead of time or performed in response to urgent situations. The procedure aims to ensure a safe delivery and minimize risks for both the mother and the baby.`,
+          `Dr. Arpana Jain specializes in the care of women undergoing caesarean sections, providing expert and compassionate support throughout the process. Whether the C-section is planned or performed as an emergency measure, Dr. Jain ensures that the procedure is carried out with the highest standards of safety and precision. She conducts thorough preoperative evaluations, explains the procedure and recovery process in detail, and addresses any concerns or questions her patients may have. Postoperatively, Dr. Jain is dedicated to managing pain, facilitating a smooth recovery, and offering support to help mothers and their babies adjust after the surgery. Her commitment to high-quality care ensures that women receive the best possible experience and outcomes during their C-section delivery.`
+        ],
+        headingText: `caesarean delivery with Dr. Arpana Jain`,
+         imgSrc: `treatments/surgeries/caesarean.jpg`
       },
       {
         label: 'Laparoscopic Hysterectomy',
-        route: '',
-        description: 'Laparoscopic Hysterectomy',
+        route: 'laparoscopichysterectomy',
+        id: 'laparoscopichysterectomy',
+        description: [
+          `Laparoscopic hysterectomy is a minimally invasive surgical procedure used to remove the uterus through small incisions in the abdomen, guided by a laparoscope—a thin, lighted tube with a camera. This approach offers several advantages over traditional open surgery, including reduced recovery time, less postoperative pain, and minimal scarring. Laparoscopic hysterectomy is often recommended for conditions such as fibroids, endometriosis, or abnormal bleeding when a less invasive option is preferable. The procedure aims to address these issues while promoting a quicker and more comfortable recovery.`,
+          `Dr. Arpana Jain specializes in laparoscopic hysterectomy, providing expert care for women undergoing this minimally invasive procedure. With her advanced skills and experience, Dr. Jain ensures that each surgery is performed with precision and care, minimizing the impact on surrounding tissues and promoting a faster recovery. She conducts thorough preoperative evaluations to discuss the benefits, risks, and expectations of the procedure, and provides detailed guidance on what to expect during and after the surgery. Dr. Jain’s approach emphasizes patient comfort and well-being, offering comprehensive postoperative care and support to facilitate a smooth recovery. Her commitment to excellence in laparoscopic surgery ensures that women receive high-quality care and achieve the best possible outcomes.`
+        ],
+        headingText: `laparoscopic hysterectomy with Dr. Arpana Jain`,
+         imgSrc: `treatments/surgeries/laparoscopichysterectomy.jpg`,
       },
       {
         label: 'Laparoscopic Myomectomy',
-        route: '',
-        description: 'Laparoscopic Myomectomy',
+        route: 'laparoscopicmyomectomy',
+        id: 'laparoscopicmyomectomy',
+        description: [
+          `Laparoscopic myomectomy is a minimally invasive surgical procedure designed to remove fibroids (myomas) from the uterus while preserving the uterus itself. Using small incisions and a laparoscope—a thin, lighted tube with a camera—surgeons can view the internal structures and remove the fibroids with precision. This approach offers several benefits over traditional open surgery, including reduced pain, shorter recovery time, and minimal scarring. Laparoscopic myomectomy is often recommended for women experiencing symptoms such as heavy bleeding, pelvic pain, or pressure due to fibroids.`,
+          `Dr. Arpana Jain provides expert care in laparoscopic myomectomy, offering a minimally invasive solution for women with uterine fibroids. With her advanced training and experience in laparoscopic techniques, Dr. Jain ensures that each procedure is performed with precision and minimal disruption. She conducts thorough preoperative assessments to discuss the benefits, risks, and specifics of the surgery, helping patients understand what to expect before, during, and after the procedure. Dr. Jain’s focus on patient-centered care includes detailed postoperative support to promote a smooth and speedy recovery. Her dedication to high-quality, compassionate care helps women achieve relief from fibroid symptoms while maintaining their reproductive health.`
+        ],
+        headingText: `laparoscopic Myomectomy with Dr. Arpana Jain`,
+         imgSrc: `treatments/surgeries/laparoscopicmyomectomy.jpg`,
       },
-      { label: 'Vaginoplasty', route: '', description: 'Vaginoplasty' },
+      { label: 'Vaginoplasty',
+         route: 'vaginoplasty',
+         id: 'vaginoplasty',
+         description: [
+          `Vaginoplasty is a surgical procedure aimed at reconstructing or tightening the vaginal canal. This procedure can be performed for various reasons, including vaginal laxity following childbirth, congenital abnormalities, or as part of gender affirmation surgery. Vaginoplasty involves making precise surgical adjustments to the vaginal tissues to enhance function, improve aesthetic appearance, or address specific health concerns. The goal is to restore or enhance the vaginal anatomy to meet the patient’s needs and preferences, contributing to improved physical and emotional well-being.`,
+          `Dr. Arpana Jain offers specialized care for patients undergoing vaginoplasty, providing expert and compassionate support throughout the process. With extensive experience in performing vaginoplasty, Dr. Jain ensures that each procedure is tailored to the individual’s needs and goals. She conducts thorough preoperative evaluations to discuss the patient’s expectations, the benefits and risks of the surgery, and the expected outcomes. Dr. Jain’s approach includes meticulous surgical techniques and a focus on patient comfort, ensuring optimal results and a smooth recovery. She also provides comprehensive postoperative care and support to help patients adjust and achieve the best possible outcomes from their surgery. Her dedication to personalized, high-quality care supports women in achieving their desired results and enhancing their overall well-being.`
+         ],
+         headingText: `Vaginoplasty with Dr. Arpana Jain`,
+         imgSrc: `treatments/surgeries/vaginoplasty.jpg`,
+         },
       {
         label: 'Operative Hysteroscopy',
-        route: '',
-        description: 'Operative Hysteroscopy',
+        route: 'operativehysteroscopy',
+        id: 'operativehysteroscopy',
+        description: [
+          `Operative hysteroscopy is a minimally invasive surgical procedure used to diagnose and treat conditions within the uterine cavity. During the procedure, a hysteroscope—a thin, lighted instrument—is inserted through the vagina and cervix into the uterus. This allows the surgeon to directly view the uterine lining and perform various interventions, such as removing polyps, fibroids, or abnormal tissue. Operative hysteroscopy is commonly used to address issues like abnormal bleeding, infertility, or uterine abnormalities, offering a targeted approach with minimal recovery time and reduced risk compared to traditional surgery.`,
+          `Dr. Arpana Jain provides expert care in operative hysteroscopy, utilizing advanced techniques to diagnose and treat uterine conditions with precision and minimal invasiveness. With her extensive experience, Dr. Jain performs the procedure with a focus on safety and effectiveness, addressing a range of issues such as polyps, fibroids, and abnormal bleeding. She conducts thorough preoperative assessments to ensure the procedure is tailored to the patient’s specific needs and provides clear explanations of the process and expected outcomes. Dr. Jain’s approach includes meticulous surgical techniques and personalized postoperative care to support a smooth recovery and optimal results. Her commitment to high-quality care ensures that patients receive the best possible treatment and achieve improved uterine health and overall well-being.`
+        ],
+        headingText: `Operative hysteroscopy with Dr. Arpana Jain`,
+         imgSrc: `treatments/surgeries/operativehysteroscopy.jpg`,
       },
-      { label: 'Tubal Ligation', route: '', description: 'Tubal Ligation' },
-      { label: 'Hymenoplasty', route: '', description: 'Hymenoplasty' },
-      { label: 'Tuboplasty', route: '', description: 'Tuboplasty' },
+      { label: 'Tubal Ligation',
+        route: 'tuballigation',
+        id:'tuballigation',
+         description: [
+          `Tubal ligation is a permanent contraceptive procedure designed to prevent pregnancy by surgically closing or blocking the fallopian tubes. This prevents eggs from traveling from the ovaries to the uterus, thereby stopping sperm from reaching the eggs. The procedure can be performed through various methods, including laparoscopic surgery, where small incisions are made in the abdomen, or via a more traditional open surgery. Tubal ligation is a highly effective form of birth control for individuals who have decided not to have more children, offering a long-term solution with minimal risk of failure.`,
+          `Dr. Arpana Jain specializes in tubal ligation, providing expert care for those seeking permanent contraception. With her extensive experience in performing tubal ligation, Dr. Jain ensures that the procedure is tailored to each patient’s needs, using advanced techniques to achieve optimal results with minimal invasiveness. She conducts thorough preoperative evaluations to discuss the benefits, risks, and expectations of the procedure, ensuring that patients make an informed decision. Dr. Jain’s approach includes detailed explanations of the procedure, meticulous surgical techniques, and comprehensive postoperative care to support a smooth recovery. Her commitment to personalized, high-quality care ensures that patients receive effective and compassionate support throughout their tubal ligation journey.`
+         ],
+         headingText: `Tubal Ligation with Dr. Arpana Jain`,
+         imgSrc: `treatments/surgeries/tuballigation.jpg`,
+         },
+
+      { label: 'Hymenoplasty',
+        route: 'hymenoplasty',
+        id: 'hymenoplasty',
+         description: [
+          `Hymenoplasty is a surgical procedure designed to reconstruct or repair the hymen, a membrane located at the entrance of the vagina. This procedure is often sought for various reasons, including cultural or personal preferences, or to address physical trauma or changes to the hymen. Hymenoplasty involves reconstructing the hymen to restore its appearance or function, typically using techniques that involve suturing or tissue grafting. The goal is to achieve a natural-looking result and address the patient's specific concerns or needs.`,
+          `Dr. Arpana Jain provides expert care in hymenoplasty, offering personalized and compassionate support for those seeking hymenal reconstruction. With her extensive experience in this delicate procedure, Dr. Jain ensures that each surgery is performed with precision and respect for the patient’s individual needs. She conducts thorough preoperative consultations to discuss the motivations for the procedure, the expected outcomes, and any potential risks. Dr. Jain’s approach includes meticulous surgical techniques and detailed postoperative care to ensure a smooth recovery and optimal results. Her commitment to providing respectful and high-quality care helps patients achieve their desired outcomes while maintaining their overall well-being and comfort.`
+         ],
+         headingText: `Hymenoplasty with Dr. Arpana Jain`,
+         imgSrc: `treatments/surgeries/hymenoplasty.jpg`,
+         },
+      { label: 'Tuboplasty',
+         route: 'tuboplasty',
+         id:'tuboplasty',
+          description: [
+            `Tuboplasty is a surgical procedure aimed at repairing or reconstructing the fallopian tubes to restore their function and enhance fertility. This procedure is typically performed to address issues such as tubal blockage or damage caused by conditions like pelvic inflammatory disease or previous surgeries. Tuboplasty can involve techniques such as tubal reanastomosis, where the blocked or damaged sections of the fallopian tubes are surgically repaired or reconnected. The goal of tuboplasty is to improve the chances of natural conception by allowing eggs to travel from the ovaries to the uterus.`,
+            `Dr. Arpana Jain specializes in tuboplasty, providing expert care for individuals seeking to restore tubal function and enhance fertility. With her extensive experience in performing tubal repair procedures, Dr. Jain ensures that each surgery is tailored to address the specific issues and needs of the patient. She conducts comprehensive preoperative evaluations to discuss the benefits, risks, and expected outcomes of the procedure. Dr. Jain’s approach includes precise surgical techniques and thorough postoperative care to support optimal recovery and increase the likelihood of successful conception. Her commitment to high-quality, patient-centered care helps individuals achieve their fertility goals and improve their chances of natural pregnancy.`
+          ],
+          headingText: `Tuboplasty treatment with Dr. Arpana Jain`,
+         imgSrc: `treatments/surgeries/tuboplasty.jpg`,
+         },
       {
         label: 'Laparoscopy For Ectopic Pregnancy',
-        route: '',
-        description: 'Laparoscopy For Ectopic Pregnancy',
+        route: 'laparoscopyectopic',
+        id:'laparoscopyectopic',
+        description: [
+          `Laparoscopy for ectopic pregnancy is a minimally invasive surgical procedure used to diagnose and treat an ectopic pregnancy, where a fertilized egg implants outside the uterus, most commonly in the fallopian tube. This condition can pose serious health risks if not addressed promptly. During a laparoscopy, a small camera (laparoscope) is inserted through tiny incisions in the abdomen, allowing the surgeon to locate and remove the ectopic tissue with precision. This approach offers advantages such as reduced pain, shorter recovery time, and minimal scarring compared to traditional open surgery.`,
+          `Dr. Arpana Jain specializes in laparoscopic treatment for ectopic pregnancy, providing expert and compassionate care for this critical condition. With her advanced skills in minimally invasive surgery, Dr. Jain performs the procedure with precision, ensuring effective removal of the ectopic tissue while minimizing impact on surrounding structures. She conducts thorough preoperative evaluations to confirm the diagnosis and plan the surgical approach, offering clear explanations about the procedure and what to expect. Dr. Jain’s focus on patient-centered care includes managing pain, facilitating a swift recovery, and providing support throughout the postoperative period. Her dedication to high-quality, empathetic care ensures that women receive the best possible outcomes in the management of ectopic pregnancy.`
+        ],
+        headingText: `Laparoscopy For Ectopic Pregnancy treatment with Dr. Arpana Jain`,
+         imgSrc: `treatments/surgeries/laparoscopyectopic.jpg`,
       },
     ],
   },
   {
     label: 'Infertility',
+    id:'infertility',
     treatments: [
       {
         label: 'Intrauterine Insemination (IUI)',
-        route: '',
-        description: 'Intrauterine Insemination (IUI)',
+        route: 'intrauterineinsemination',
+        id:'intrauterineinsemination',
+        description: [
+          `Intrauterine insemination (IUI) is a fertility treatment designed to increase the chances of conception by placing sperm directly into the uterus around the time of ovulation. This procedure involves preparing and concentrating the sperm in a laboratory, then using a thin catheter to inject it into the uterine cavity. IUI is often recommended for couples experiencing infertility due to issues like low sperm count, mild endometriosis, or unexplained infertility. The procedure is typically performed in a clinical setting and aims to improve the chances of sperm reaching the egg, thereby enhancing the likelihood of successful fertilization.`,
+          `Dr. Arpana Jain offers specialized care in intrauterine insemination (IUI), providing expert guidance and support for couples undergoing this fertility treatment. With her extensive experience in reproductive medicine, Dr. Jain ensures that each IUI procedure is conducted with precision and attention to detail. She performs thorough pre-procedure evaluations to assess individual fertility factors and develop a tailored treatment plan. Dr. Jain provides clear explanations about the IUI process, including sperm preparation, timing of insemination, and what to expect during and after the procedure. Her commitment to compassionate, patient-centered care includes ongoing support and monitoring to maximize the chances of a successful pregnancy. Dr. Jain’s expertise and personalized approach help couples navigate the complexities of fertility treatment with confidence and hope.`
+        ],
+        headingText: `Intrauter Ineinsemination treatment with Dr. Arpana Jain`,
+         imgSrc: `treatments/infertility/intrauterineinsemination.jpg`,
       },
       {
         label: 'In Vitro Fertilization (IVF)',
-        route: '',
-        description: 'In Vitro Fertilization (IVF)',
+        route: 'ivf',
+        id: 'ivf',
+        description: [
+          `In vitro fertilization (IVF) is a complex assisted reproductive technology used to help individuals and couples achieve pregnancy when other methods have not been successful. The process involves stimulating the ovaries to produce multiple eggs, retrieving these eggs through a minor surgical procedure, and fertilizing them with sperm in a laboratory setting. The resulting embryos are then cultured and transferred into the uterus, with the aim of achieving a successful implantation and pregnancy. IVF can be recommended for various fertility issues, including blocked fallopian tubes, severe male infertility, or unexplained infertility.`,
+          `Dr. Arpana Jain specializes in in vitro fertilization (IVF), offering expert care and support throughout the IVF process. With her extensive experience in assisted reproductive technologies, Dr. Jain provides comprehensive care, from initial evaluations and ovarian stimulation to egg retrieval, fertilization, and embryo transfer. She conducts thorough pre-treatment assessments to develop a personalized IVF plan tailored to each patient’s unique fertility needs and goals. Dr. Jain provides detailed explanations of each stage of the IVF process, ensuring patients are well-informed and comfortable with the procedure. Her patient-centered approach includes ongoing monitoring, support, and guidance to optimize the chances of a successful pregnancy. Dr. Jain’s commitment to high-quality, empathetic care helps individuals and couples navigate the IVF journey with confidence and hope.`
+        ],
+        headingText: `In Vitro Fertilization (IVF) treatment with Dr. Arpana Jain`,
+         imgSrc: `treatments/infertility/ivf.jpg`,
       },
     ],
   },
