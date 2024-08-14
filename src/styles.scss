@@ -133,6 +133,12 @@ a {
         display: flex;
         cursor: pointer;
     }
+
+    .p-timeline-event-opposite,
+    .p-timeline-event-content {
+        padding: 0;
+        min-width: 0;
+    }
 }
 
 .trimester-desc {
