@@ -253,105 +253,48 @@
 .contact-section {
     background: url('/assets/back.png');
     background-size: 80% 80%;
-    padding: 3rem;
+    padding: 3rem 1rem;
+    text-align: center;
+    margin-bottom: 0;
 
-    .contact {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-width: 500px;
+    .section-heading {
+        margin-bottom: 2rem;
+    }
 
-        form {
-            .form-fields {
-                display: flex;
-                flex-direction: column;
-                gap: 2rem;
-            }
+    .card {
+        padding: 2rem;
 
-            input,
-            textarea {
-                font-size: 16px;
-                height: 25px;
-                padding: 10px 10px 10px 5px;
-                display: block;
-                border: none;
-                outline: none;
-                border-bottom: 1px solid #000;
-                color: #000;
-                background: rgba(0, 0, 0, 0);
-                transition: 0.2s ease;
-            }
-
-            textarea {
-                height: auto;
-            }
-
-            input:focus,
-            textarea:focus {
-                outline: 0;
-            }
-
-            label {
-                color: #000;
-                font-size: 1.25rem;
-                font-weight: normal;
-                position: absolute;
-                pointer-events: none;
-                top: -3px;
-                transition: 0.2s ease all;
-                -moz-transition: 0.2s ease all;
-                -webkit-transition: 0.2s ease all;
-            }
-
-            /* active state */
-            input:focus~label,
-            textarea:focus~label,
-            input:valid~label,
-            textarea:valid~label,
-            input[disabled]~label {
-                top: -25px;
-                font-size: 16px;
-                color: #000;
-            }
-
-            .group {
-                position: relative;
-                margin-bottom: 35px;
-            }
-
-            .submit-btn {
-                background-color: $primary;
-                padding: 0.75rem 0.825rem;
-                color: #fff;
-                margin-left: auto;
-                border: 0;
-            }
-
+        h3 {
+            font-size: 1.75rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid $primary;
+            margin-bottom: 1.5rem;
         }
 
-        .wrap-container {
-            row-gap: 2rem;
-            column-gap: 2rem;
-            display: flex;
-        }
+        p {
+            font-size: 1.5rem;
 
-        .contact-footer {
-            display: flex;
-            justify-content: space-between;
-            gap: 0.5rem;
-            align-items: start;
-            line-height: 1.25;
-
-            @media (max-width: 800px) {
-
-                flex-direction: column;
-
-            }
         }
     }
 
+    @media (min-width: $bp-md) {
+        padding: 10rem 3rem;
+
+        .section-heading {
+            margin-bottom: 4rem;
+        }
+
+        .contact {
+            display: flex;
+            gap: 2rem;
+            justify-content: space-between;
+        }
+
+        .card {
+            width: 33%;
+            padding: 2rem 4rem;
+        }
+    }
 }
 
 @keyframes fade-out {

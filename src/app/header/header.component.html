@@ -9,7 +9,8 @@
             <ul class="menu menu-item-depth-0">
                 @for (item of menuList; track $index) {
                 <li class="menu-item">
-                    <span class="item-expandible" (click)="toggleSubMenu(item.label)">
+                    <span class="item-expandible" (click)="toggleSubMenu(item.label, $event)"
+                        (mouseenter)="openSubMenu(item.label)">
                         {{item.label}}
                         @if (item.items && item.items.length) {
                         <span class="expandible-icon">

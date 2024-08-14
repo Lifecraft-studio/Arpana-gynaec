@@ -1,6 +1,8 @@
 import { NgClass, NgStyle } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
+import { DOCUMENT } from '@angular/common';
+
 
 @Component({
   selector: 'app-header',
@@ -9,7 +11,7 @@ import { Router, RouterLink } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   showMenu = false;
 
   menuList = [
@@ -20,10 +22,10 @@ export class HeaderComponent {
           label: 'Dr. Arpana Jain',
           router: 'about'
         },
-        {
-          label: 'Gallery',
-          router: 'gallery'
-        },
+        // {
+        //   label: 'Gallery',
+        //   router: 'gallery'
+        // },
       ],
       collpased: true,
       styles: { width: '250px', 'grid-template-columns': 'repeat(1, 1fr)', left: 0 }
@@ -184,19 +186,21 @@ export class HeaderComponent {
       collpased: true,
       styles: { width: '250px', 'grid-template-columns': 'repeat(1, 1fr)' }
     },
-    {
-      label: 'Contact Us',
-      router: ''
-    },
   ]
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, @Inject(DOCUMENT) private document: Document) { }
+  ngOnInit(): void {
+    document.addEventListener('click', () => {
+      this.collapseAll();
+    });
+
+  }
 
   scrollTo(elementId: string) {
     this.router.navigate([''], { fragment: elementId })
   }
 
-  toggleSubMenu(label: string) {
+  closeOtherMenu(label: string) {
     const menuItem = this.menuList.find(menu => {
       return menu.label === label;
     })
@@ -205,9 +209,25 @@ export class HeaderComponent {
       return;
     }
     this.collapseAll();
+  }
+
+  toggleSubMenu(label: string, event: Event) {
+    event.stopPropagation();
+    this.closeOtherMenu(label)
     this.menuList.forEach(menu => {
       if (menu.label === label) {
         menu.collpased = !menu.collpased;
+      }
+    })
+  }
+
+  openSubMenu(label: string) {
+    this.closeOtherMenu(label);
+    this.menuList.forEach(menu => {
+      if (menu.label === label) {
+        if (menu.collpased) {
+          menu.collpased = false;
+        }
       }
     })
   }
@@ -217,4 +237,5 @@ export class HeaderComponent {
       menu.collpased = true;
     })
   }
+
 }
