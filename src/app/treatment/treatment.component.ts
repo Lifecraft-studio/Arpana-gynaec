@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, RouterLink, RouterOutlet } from '@angular/router';
 import { treatments } from '../utils/constant-utils';
 import { InfoComponent } from "../info/info.component";
+import { UpperCasePipe } from '@angular/common';
 
 @Component({
   selector: 'app-treatment',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, InfoComponent],
+  imports: [RouterOutlet, RouterLink, InfoComponent, UpperCasePipe],
   templateUrl: './treatment.component.html',
   styleUrl: './treatment.component.scss'
 })

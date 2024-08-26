@@ -22,4 +22,14 @@
         line-height: 1.5;
         margin-bottom: 2rem;
     }
+
+    @media (max-width: $bp-md) {
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1.25rem;
+        }
+    }
 }

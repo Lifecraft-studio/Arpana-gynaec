@@ -16,6 +16,12 @@
 }
 
 .section-content {
+
+    @media (min-width: $bp-sm) and (max-width: $bp-md) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     @media (min-width: $bp-md) {
         display: flex;
 

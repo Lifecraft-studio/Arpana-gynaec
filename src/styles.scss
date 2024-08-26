@@ -228,6 +228,15 @@ a {
     }
 }
 
+.call-to-action {
+    background-color: $primary;
+    color: #fff;
+    border-radius: 100px;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+}
+
 .card {
     border-radius: 10px;
     background-color: #f7f7f7;

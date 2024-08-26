@@ -107,6 +107,11 @@ header {
     }
 }
 
+.action-btn {
+    display: flex;
+    align-items: center;
+}
+
 .btn-toggle {
     position: absolute;
     left: 0;
